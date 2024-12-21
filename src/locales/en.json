@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "home": {
+    "greeting": "Hi, I'm [Your Name]",
+    "introduction": "I'm a full-stack developer specializing in creating modern web applications."
+  },
+  "about": {
+    "title": "About Me",
+    "history": "My professional journey is a continuous development towards creating better web solutions.",
+    "skills": "I specialize in technologies such as React, TypeScript, Node.js, and modern CSS.",
+    "approach": "In my work, I follow the principle that nothing is impossible - every challenge is an opportunity to grow and find innovative solutions."
+  },
+  "portfolio": {
+    "title": "My Projects",
+    "viewProject": "View Project",
+    "viewCode": "View Code"
+  },
+  "contact": {
+    "title": "Contact",
+    "social": "Social Media",
+    "form": {
+      "name": "Full name",
+      "email": "Email address",
+      "message": "Message",
+      "send": "Send message"
+    }
+  }
+}

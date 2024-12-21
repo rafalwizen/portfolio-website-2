@@ -1,0 +1,33 @@
+{
+  "nav": {
+    "home": "Strona główna",
+    "about": "O mnie",
+    "portfolio": "Portfolio",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "greeting": "Cześć, jestem [Twoje Imię]",
+    "introduction": "Jestem full-stack developerem specjalizującym się w tworzeniu nowoczesnych aplikacji internetowych."
+  },
+  "about": {
+    "title": "O mnie",
+    "history": "Moja historia zawodowa to ciągły rozwój w kierunku tworzenia coraz lepszych rozwiązań webowych.",
+    "skills": "Specjalizuję się w technologiach takich jak React, TypeScript, Node.js oraz nowoczesnym CSS.",
+    "approach": "W mojej pracy kieruję się zasadą, że nie ma rzeczy niemożliwych - każde wyzwanie to okazja do rozwoju i znalezienia innowacyjnego rozwiązania."
+  },
+  "portfolio": {
+    "title": "Moje projekty",
+    "viewProject": "Zobacz projekt",
+    "viewCode": "Zobacz kod"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "social": "Media społecznościowe",
+    "form": {
+      "name": "Imię i nazwisko",
+      "email": "Adres email",
+      "message": "Wiadomość",
+      "send": "Wyślij wiadomość"
+    }
+  }
+}
