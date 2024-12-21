@@ -21,13 +21,19 @@
     "viewCode": "View Code"
   },
   "contact": {
-    "title": "Contact",
-    "social": "Social Media",
     "form": {
       "name": "Full name",
       "email": "Email address",
       "message": "Message",
-      "send": "Send message"
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Thank you for your message! We'll respond as soon as possible.",
+      "errors": {
+        "name": "Name is required",
+        "email": "Email is required",
+        "emailFormat": "Invalid email format",
+        "message": "Message is required"
+      }
     }
   }
 }

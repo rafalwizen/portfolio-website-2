@@ -21,13 +21,19 @@
     "viewCode": "Zobacz kod"
   },
   "contact": {
-    "title": "Kontakt",
-    "social": "Media społecznościowe",
     "form": {
       "name": "Imię i nazwisko",
       "email": "Adres email",
       "message": "Wiadomość",
-      "send": "Wyślij wiadomość"
+      "send": "Wyślij wiadomość",
+      "sending": "Wysyłanie...",
+      "success": "Dziękujemy za wiadomość! Odpowiemy najszybciej jak to możliwe.",
+      "errors": {
+        "name": "Imię jest wymagane",
+        "email": "Email jest wymagany",
+        "emailFormat": "Nieprawidłowy format email",
+        "message": "Wiadomość jest wymagana"
+      }
     }
   }
 }
