@@ -35,5 +35,34 @@
         "message": "Wiadomość jest wymagana"
       }
     }
+  },
+  "technologies": {
+    "title": "Technologie",
+    "items": {
+      "frontend": {
+        "name": "Frontend Development",
+        "description": "React, TypeScript, Next.js - tworzę responsywne i wydajne interfejsy użytkownika"
+      },
+      "backend": {
+        "name": "Backend Development",
+        "description": "Node.js, Express, MongoDB - projektuję skalowalne rozwiązania serwerowe"
+      },
+      "uiux": {
+        "name": "UI/UX Design",
+        "description": "Tailwind CSS, Material-UI - dbam o estetykę i użyteczność interfejsu"
+      },
+      "devops": {
+        "name": "DevOps",
+        "description": "Git, Docker, CI/CD - automatyzuję procesy developerskie"
+      },
+      "mobile": {
+        "name": "Mobile Development",
+        "description": "React Native - tworzę aplikacje mobilne na iOS i Android"
+      },
+      "performance": {
+        "name": "Web Performance",
+        "description": "Optymalizacja, SEO - dbam o szybkość i widoczność w sieci"
+      }
+    }
   }
 }

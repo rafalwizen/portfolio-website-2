@@ -2,6 +2,7 @@
 import Navbar from './components/Navbar';
 import ProjectCard from './components/ProjectCard';
 import ContactForm from './components/ContactForm';
+import Technologies from './components/Technologies';
 import { useTranslation } from 'react-i18next';
 
 const App = () => {
@@ -89,6 +90,8 @@ const App = () => {
                     </div>
                 </div>
             </section>
+
+            <Technologies/>
 
             <section id="portfolio" className="min-h-screen px-4">
                 <div className="max-w-7xl mx-auto py-20">
