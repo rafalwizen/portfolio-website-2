@@ -55,10 +55,22 @@ const ContactForm = () => {
         setIsSubmitting(true);
 
         try {
-            // Tu dodaj logikę wysyłania formularza do backend'u
-            await new Promise(resolve => setTimeout(resolve, 1000));
-            setSubmitSuccess(true);
-            setFormData({ name: '', email: '', message: '' });
+            const response = await fetch('http://localhost:5000/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const result = await response.json();
+
+            if (response.ok) {
+                setSubmitSuccess(true);
+                setFormData({ name: '', email: '', message: '' });
+            } else {
+                throw new Error(result.message || 'Error sending email');
+            }
         } catch (error) {
             console.error('Error submitting form:', error);
         } finally {
