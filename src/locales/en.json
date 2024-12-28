@@ -21,6 +21,8 @@
     "viewCode": "View Code"
   },
   "contact": {
+    "title": "Contact",
+    "social": "Social Media",
     "form": {
       "name": "Full name",
       "email": "Email address",
