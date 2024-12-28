@@ -45,13 +45,13 @@ const App = () => {
                                     onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
                                     className="px-6 py-3 bg-black text-white rounded-lg hover:bg-black/90 transition-colors"
                                 >
-                                    Zobacz projekty
+                                    {t('home.projects')}
                                 </button>
                                 <button
                                     onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
                                     className="px-6 py-3 border border-black text-black rounded-lg hover:bg-black/5 transition-colors"
                                 >
-                                    Kontakt
+                                    {t('home.contact')}
                                 </button>
                             </div>
                         </div>
@@ -75,15 +75,15 @@ const App = () => {
                     </h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div className="p-8 bg-[rgb(248,248,248)] rounded-xl">
-                            <h3 className="text-xl font-semibold text-black mb-4">Historia</h3>
+                            <h3 className="text-xl font-semibold text-black mb-4">{t('about.historyHeader')}</h3>
                             <p className="text-black/80">{t('about.history')}</p>
                         </div>
                         <div className="p-8 bg-[rgb(248,248,248)] rounded-xl">
-                            <h3 className="text-xl font-semibold text-black mb-4">Umiejętności</h3>
+                            <h3 className="text-xl font-semibold text-black mb-4">{t('about.skillsHeader')}</h3>
                             <p className="text-black/80">{t('about.skills')}</p>
                         </div>
                         <div className="p-8 bg-[rgb(248,248,248)] rounded-xl">
-                            <h3 className="text-xl font-semibold text-black mb-4">Podejście</h3>
+                            <h3 className="text-xl font-semibold text-black mb-4">{t('about.approachHeader')}</h3>
                             <p className="text-black/80">{t('about.approach')}</p>
                         </div>
                     </div>
@@ -120,7 +120,7 @@ const App = () => {
                             </h3>
                             <div className="flex flex-col gap-4">
                                 <a
-                                    href="https://linkedin.com"
+                                    href="https://linkedin.com/in/rafał-wiżeń-637357258"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-3 text-black hover:text-black/70 transition-colors group"
@@ -133,7 +133,7 @@ const App = () => {
                                     LinkedIn
                                 </a>
                                 <a
-                                    href="https://github.com"
+                                    href="https://github.com/rafalwizen"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center gap-3 text-black hover:text-black/70 transition-colors group"

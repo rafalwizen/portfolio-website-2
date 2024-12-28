@@ -7,13 +7,18 @@
   },
   "home": {
     "greeting": "Cześć, jestem Rafał",
-    "introduction": "Jestem full-stack developerem specjalizującym się w tworzeniu nowoczesnych aplikacji internetowych."
+    "introduction": "Jestem full-stack developerem specjalizującym się w tworzeniu nowoczesnych aplikacji internetowych.",
+    "projects": "Projekty",
+    "contact": "Kontakt"
   },
   "about": {
     "title": "O mnie",
     "history": "Moja historia zawodowa to ciągły rozwój w kierunku tworzenia coraz lepszych rozwiązań webowych.",
+    "historyHeader": "Historia",
     "skills": "Specjalizuję się w technologiach takich jak React, TypeScript, Node.js oraz nowoczesnym CSS.",
-    "approach": "W mojej pracy kieruję się zasadą, że nie ma rzeczy niemożliwych - każde wyzwanie to okazja do rozwoju i znalezienia innowacyjnego rozwiązania."
+    "skillsHeader": "Umiejętności",
+    "approach": "W mojej pracy kieruję się zasadą, że nie ma rzeczy niemożliwych - każde wyzwanie to okazja do rozwoju i znalezienia innowacyjnego rozwiązania.",
+    "approachHeader": "Podejście"
   },
   "portfolio": {
     "title": "Moje projekty",

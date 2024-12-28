@@ -8,6 +8,7 @@ import {
     Smartphone,
     Globe
 } from 'lucide-react';
+import {useTranslation} from "react-i18next";
 
 interface Technology {
     icon: React.ReactNode;
@@ -16,6 +17,7 @@ interface Technology {
 }
 
 const Technologies = () => {
+    const { t } = useTranslation();
 
     const technologies: Technology[] = [
         {
@@ -54,7 +56,7 @@ const Technologies = () => {
         <section className="min-h-screen px-4 bg-[rgb(248,248,248)]">
             <div className="max-w-7xl mx-auto py-20">
                 <h2 className="text-3xl md:text-5xl font-bold text-black mb-12 text-center">
-                    Technologie
+                    {t('technologies.title')}
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {technologies.map((tech, index) => (

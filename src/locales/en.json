@@ -7,13 +7,18 @@
   },
   "home": {
     "greeting": "Hi, I'm Rafał",
-    "introduction": "I'm a full-stack developer specializing in creating modern web applications."
+    "introduction": "I'm a full-stack developer specializing in creating modern web applications.",
+    "projects": "Projects",
+    "contact": "Contact"
   },
   "about": {
     "title": "About Me",
     "history": "My professional journey is a continuous development towards creating better web solutions.",
+    "historyHeader": "History",
     "skills": "I specialize in technologies such as React, TypeScript, Node.js, and modern CSS.",
-    "approach": "In my work, I follow the principle that nothing is impossible - every challenge is an opportunity to grow and find innovative solutions."
+    "skillsHeader": "Skills",
+    "approach": "In my work, I follow the principle that nothing is impossible - every challenge is an opportunity to grow and find innovative solutions.",
+    "approachHeader": "Approach"
   },
   "portfolio": {
     "title": "My Projects",
