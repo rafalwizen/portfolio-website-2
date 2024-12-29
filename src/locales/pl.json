@@ -45,30 +45,32 @@
   },
   "technologies": {
     "title": "Technologie",
+    "more": "Czytaj dalej",
+    "less": "Zwiń tekst",
     "items": {
-      "frontend": {
-        "name": "Frontend Development",
-        "description": "React, TypeScript, Next.js - tworzę responsywne i wydajne interfejsy użytkownika"
+      "react": {
+        "name": "React",
+        "description": "Z Reactem spotkałem się dopiero, gdy rozpocząłem moją pracę zawodową. Część projektów frontendowych u mojego pracodawcy, w tym główny projekt mojego zespołu, zostało napisana właśnie w tej technologii facebookowej (tak, React został stworzony na potrzeby budowy Facebooka!). Więc trzeba było zakasać rękawy i nauczyć się, z czym to się je! A okazało się to na tyle satysfakcjonujące, że właśnie w Reakcie zacząłem tworzyć swoje prywatne projekty frontendowe, w tym tę stronę z moim portfolio. Jest to technologia, w której preferuję pracować, gdy tworzę warstwę wizualną dla klienta. Dzięki temu narzędziu jestem pewien, że potrafię zrealizować to, czego klient potrzebuje lub o czym tylko marzy!"
       },
-      "backend": {
-        "name": "Backend Development",
-        "description": "Node.js, Express, MongoDB - projektuję skalowalne rozwiązania serwerowe"
+      "java": {
+        "name": "Java",
+        "description": "Stara, dobra Java... Ale dlaczego właśnie Java? Swoją przygodę z programowaniem zacząłem od C++, a na studiach, które dopiero co zaczynałem, również początkowo pracowaliśmy z C++. Jednak na drugim roku przedmioty związane z programowaniem przejęła Java i bardzo wymagająca prowadząca... która sprawiła, że wsiąkłem w Javę! Zacząłem tworzyć w niej prywatne projekty (stare Sudoku w Swingu wciąż można zobaczyć na moim GitHubie!) i coraz bardziej zagłębiać się w jej możliwości, w tym w Springa, który – jak się okazało – jest praktycznie obowiązkowy w pracy z Javą. To właśnie w Javie znalazłem swoją pierwszą pracę, u klienta, z którym współpracuję do dziś. Główne projekty backendowe tego klienta są pisane w Javie oraz C++, a ja odpowiadam oczywiście za część Javową i jestem z nią związany do dziś!"
       },
-      "uiux": {
-        "name": "UI/UX Design",
-        "description": "Tailwind CSS, Material-UI - dbam o estetykę i użyteczność interfejsu"
+      "db": {
+        "name": "Bazy danych",
+        "description": "Jeżeli tworzony projekt wymaga utworzenia bazy danych, najchętniej sięgam po bazy SQL-owe, a szczególnie po MySQL-a. Do tej pory nigdy mnie nie zawiódł, a wszystkie moje prywatne projekty obsłużyłem nim w pełni satysfakcjonująco. Kiedy dowiedziałem się, że z MySQL-a korzysta Facebook, tylko utwierdziłem się w swoim wyborze technologii. W pracy etatowej wykorzystuję również bazy Oracle oraz MariaDB/HeidiSQL, ale w prywatnych projektach jestem prawdziwym MySQLoverem!"
       },
-      "devops": {
-        "name": "DevOps",
-        "description": "Git, Docker, CI/CD - automatyzuję procesy developerskie"
+      "js": {
+        "name": "JavaScript & TypeScript",
+        "description": "Dlaczego dodaję je razem? A no dlatego, że są one dla mnie bardzo zamienne i splecione ze sobą. TypeScript, jest de facto rozszerzeniem JavaScriptu, które dodaje statyczne typowanie oraz inne zaawansowane funkcje, za to kod napisany w JavaScript może być użyty w TypeScript bez żadnych zmian. W swoich prywatnych projektach częsciej wybieram TypeScript ale mój główny klient korzysta z JavaScriptu, więc w moim doświadczeniu na ten moment mam pewne zbalansowanie, chociaż z JavaScriptem, współpracuję dłużej."
       },
-      "mobile": {
-        "name": "Mobile Development",
-        "description": "React Native - tworzę aplikacje mobilne na iOS i Android"
+      "express": {
+        "name": "Express.js",
+        "description": "Express.js stosuję stosunkowo od niedawna, jednak jest to moje ulubione rozwiązanie w projektach, które muszą mieć serwer łączący się np. z bazą danych, ale nie są na tyle duże, żeby budować projekt w Javie. Serwer Express.js jest szybki, prosty do postawienia, uruchomienia oraz wdrożenia potrzebnych funkcji, a dzięki temu łatwiej rozwiązać potencjalne problemy. A zazwyczaj proste rozwiązanie to najlepsze rozwiązanie!"
       },
-      "performance": {
-        "name": "Web Performance",
-        "description": "Optymalizacja, SEO - dbam o szybkość i widoczność w sieci"
+      "ai": {
+        "name": "AI",
+        "description": "W swoich projektach korzystam również z całkiem nowej dziedziny technologii, jaką są narzędzia AI. Do moich ulubionych należą ClaudeAI, ChatGPT oraz V0. Narzędzia te pomagają mi w optymalizacji procesu tworzenia, poprzez generowanie szablonów, prezentowanie gotowych rozwiązań oraz wykrywania błędów. Na dzień dzisiejszy technologie te stanowią istotną część mojego zestawu narzędzi, umożliwiając mi przyspieszenie pracy oraz dostarczanie w pełni działających rozwiązań."
       }
     }
   }

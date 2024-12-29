@@ -45,30 +45,32 @@
   },
   "technologies": {
     "title": "Technologies",
+    "more": "Read more",
+    "less": "Collapse text",
     "items": {
-      "frontend": {
-        "name": "Frontend Development",
-        "description": "React, TypeScript, Next.js - I create responsive and efficient user interfaces"
+      "react": {
+        "name": "React",
+        "description": "I first encountered React when I started my professional career. Some of the frontend projects at my employer's company, including my team's main project, were written in this Facebook technology (yes, React was originally created for building Facebook!). So, I had to roll up my sleeves and learn how to use it! And it turned out to be so enjoyable that I started using React for my private frontend projects, including this portfolio website. It’s a technology I prefer to work with when creating the visual layer for clients. Thanks to this tool, I’m confident I can deliver whatever a client needs or dreams of!"
       },
-      "backend": {
-        "name": "Backend Development",
-        "description": "Node.js, Express, MongoDB - I design scalable server-side solutions"
+      "java": {
+        "name": "Java",
+        "description": "Plain old Java... But why Java? I started my programming journey with C++, and during my studies, which I had just begun, we also initially worked with C++. However, in the second year, programming-related courses were taken over by Java and a very demanding instructor... who made me dive deep into Java! I started creating private projects in it (my old Sudoku in Swing can still be found on my GitHub!) and delving further into its possibilities, including Spring, which, as it turned out, is practically a must-have when working with Java. It was Java that landed me my first job, with a client I still work with today. The client's main backend projects are written in Java and C++, and I am, of course, responsible for the Java-based projects,"
       },
-      "uiux": {
-        "name": "UI/UX Design",
-        "description": "Tailwind CSS, Material-UI - I ensure the aesthetics and usability of the interface"
+      "db": {
+        "name": "Databases",
+        "description": "If a project requires me to create a database, I most often choose SQL-based solutions, particularly MySQL. It has never let me down so far, and I’ve successfully handled all my private projects with it to my full satisfaction. When I found out that Facebook also uses MySQL, it only reinforced my choice of this technology. At my full-time job, I also work with Oracle and MariaDB/HeidiSQL databases, but in my private projects, I’m a true MySQLover!"
       },
-      "devops": {
-        "name": "DevOps",
-        "description": "Git, Docker, CI/CD - I automate development processes"
+      "js": {
+        "name": "JavaScript & TypeScript",
+        "description": "Why do I mention them together? Well, because they are very interchangeable and intertwined for me. TypeScript is, in fact, an extension of JavaScript that adds static typing and other advanced features, but code written in JavaScript can be used in TypeScript without any changes. In my private projects, I more often choose TypeScript, but my main client uses JavaScript, so at this point in my experience, I have a certain balance, although I have worked with JavaScript for a longer time."
       },
-      "mobile": {
-        "name": "Mobile Development",
-        "description": "React Native - I create mobile applications for iOS and Android"
+      "express": {
+        "name": "Express.js",
+        "description": "I have been using Express.js relatively recently, but it has become my favorite solution for projects that need a server connecting to, for example, a database, but are not large enough to build a project in Java. The Express.js server is fast, easy to set up, run, and deploy necessary functions, making it easier to solve potential problems. And usually, the simplest solution is the best one"
       },
-      "performance": {
-        "name": "Web Performance",
-        "description": "Optimization, SEO - I ensure speed and visibility on the web"
+      "ai": {
+        "name": "AI",
+        "description": "In my projects, I also work with a relatively new field of technology, namely AI tools. My favorites include ClaudeAI, ChatGPT, and V0. These tools help optimize my development process by generating templates, presenting ready-made solutions, and detecting errors. As of today, these technologies are an essential part of my toolkit, allowing me to speed up my work and deliver fully functional solutions."
       }
     }
   }
