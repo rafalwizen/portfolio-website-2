@@ -4,6 +4,9 @@
 ## Technologia
 - React
 
+## Konfiguracja projektu
+Zmień nazwę pliku ".env_template" na ".env" i uzupełnij go odpowiednimi danymi.
+
 ## Kontakt
 Jeśli chcesz się skontaktować, napisz na: [rafal.wizen@gmail.com](mailto:rafal.wizen@gmail.com)
 

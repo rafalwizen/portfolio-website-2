@@ -4,6 +4,9 @@
 ## Technology
 - React
 
+## Project Setup
+Rename the ".env_template" file to ".env" and fill it with the appropriate data.
+
 ## Contact
 If you'd like to get in touch, please write to: [rafal.wizen@gmail.com](mailto:rafal.wizen@gmail.com)
 
