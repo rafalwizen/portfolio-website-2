@@ -8,9 +8,9 @@ import {
     ChevronUp
 } from 'lucide-react';
 import { useTranslation } from "react-i18next";
-import ClaudeAiIcon from '../assets/icons/claude-ai-icon.svg';
-import ChatGptIcon from '../assets/icons/chatgpt-icon.svg';
-import V0 from '../assets/icons/v0.svg';
+import ClaudeAiIcon from '../../assets/icons/claude-ai-icon.svg';
+import ChatGptIcon from '../../assets/icons/chatgpt-icon.svg';
+import V0 from '../../assets/icons/v0.svg';
 
 interface Technology {
     icon: React.ReactNode | React.ReactNode[];

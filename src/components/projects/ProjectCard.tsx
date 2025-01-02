@@ -1,5 +1,5 @@
 // import React from 'react';
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
 
 interface ProjectCardProps {
     title: string;
@@ -18,7 +18,7 @@ const ProjectCard = ({
                          liveUrl,
                          githubUrl
                      }: ProjectCardProps) => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
