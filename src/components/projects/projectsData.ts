@@ -5,7 +5,7 @@ export const projects: Project[] = [
         title: 'projects.photographer-website.title',
         description: 'projects.photographer-website.description',
         technologies: ['React', 'Tailwind'],
-        imageUrl: 'src/assets/images/photographer-website-1.jpg',
+        imagesUrls: ['src/assets/images/photographer-website-1.jpg','src/assets/images/photographer-website-2.jpg'],
         liveUrl: 'http://rozbickipawel.pl/',
         githubUrl: 'https://github.com/username/project1'
     },
@@ -13,7 +13,7 @@ export const projects: Project[] = [
         title: 'projects.bike-shop.title',
         description: 'projects.bike-shop.description',
         technologies: ['Next.js', 'Node.js', 'MongoDB'],
-        imageUrl: 'src/assets/images/bike-shop-en-1.jpg',
+        imagesUrls: ['src/assets/images/bike-shop-en-1.jpg','src/assets/images/bike-shop-en-2.jpg','src/assets/images/bike-shop-pl-1.jpg','src/assets/images/bike-shop-pl-2.jpg'],
         liveUrl: 'https://project2.com',
         githubUrl: 'https://github.com/username/project2'
     }

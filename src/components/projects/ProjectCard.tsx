@@ -1,11 +1,12 @@
-// import React from 'react';
-import {useTranslation} from 'react-i18next';
+import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface ProjectCardProps {
     title: string;
     description: string;
     technologies: string[];
-    imageUrl: string;
+    imagesUrls: string[];
     liveUrl?: string;
     githubUrl?: string;
 }
@@ -14,20 +15,84 @@ const ProjectCard = ({
                          title,
                          description,
                          technologies,
-                         imageUrl,
+                         imagesUrls,
                          liveUrl,
                          githubUrl
                      }: ProjectCardProps) => {
-    const {t} = useTranslation();
+    const { t } = useTranslation();
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+    const [isAnimating, setIsAnimating] = useState(false);
+
+    const handlePrevImage = () => {
+        if (isAnimating) return;
+        setIsAnimating(true);
+        setCurrentImageIndex(prev =>
+            prev === 0 ? imagesUrls.length - 1 : prev - 1
+        );
+        setTimeout(() => setIsAnimating(false), 300);
+    };
+
+    const handleNextImage = () => {
+        if (isAnimating) return;
+        setIsAnimating(true);
+        setCurrentImageIndex(prev =>
+            prev === imagesUrls.length - 1 ? 0 : prev + 1
+        );
+        setTimeout(() => setIsAnimating(false), 300);
+    };
 
     return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="aspect-video w-full relative overflow-hidden">
-                <img
-                    src={imageUrl}
-                    alt={title}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                />
+            <div className="aspect-video w-full relative overflow-hidden group">
+                <div
+                    className="absolute w-full h-full flex transition-transform duration-300 ease-in-out"
+                    style={{
+                        transform: `translateX(-${currentImageIndex * 100}%)`
+                    }}
+                >
+                    {imagesUrls.map((url, index) => (
+                        <img
+                            key={index}
+                            src={url}
+                            alt={`${title} - Image ${index + 1}`}
+                            className="w-full h-full object-cover flex-shrink-0"
+                        />
+                    ))}
+                </div>
+
+                {imagesUrls.length > 1 && (
+                    <>
+                        <button
+                            onClick={handlePrevImage}
+                            disabled={isAnimating}
+                            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity z-10 disabled:opacity-50"
+                            aria-label="Previous image"
+                        >
+                            <ChevronLeft className="w-6 h-6" />
+                        </button>
+                        <button
+                            onClick={handleNextImage}
+                            disabled={isAnimating}
+                            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/50 p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity z-10 disabled:opacity-50"
+                            aria-label="Next image"
+                        >
+                            <ChevronRight className="w-6 h-6" />
+                        </button>
+
+                        <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1 z-10">
+                            {imagesUrls.map((_, index) => (
+                                <div
+                                    key={index}
+                                    className={`w-2 h-2 rounded-full transition-colors ${
+                                        index === currentImageIndex
+                                            ? 'bg-white'
+                                            : 'bg-white/50'
+                                    }`}
+                                />
+                            ))}
+                        </div>
+                    </>
+                )}
             </div>
 
             <div className="p-6">
@@ -40,8 +105,8 @@ const ProjectCard = ({
                             key={index}
                             className="px-3 py-1 bg-[rgb(248,248,248)] rounded-full text-sm text-black"
                         >
-              {tech}
-            </span>
+                            {tech}
+                        </span>
                     ))}
                 </div>
 
