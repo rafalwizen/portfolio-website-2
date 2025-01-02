@@ -6,7 +6,10 @@ export interface Project {
     title: string;
     description: string;
     technologies: string[];
-    imagesUrls: string[];
+    images: {
+        pl: string[];
+        en: string[];
+    };
     liveUrl: string;
     githubUrl: string;
 }

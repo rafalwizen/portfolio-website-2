@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
@@ -6,7 +6,10 @@ interface ProjectCardProps {
     title: string;
     description: string;
     technologies: string[];
-    imagesUrls: string[];
+    images: {
+        pl: string[];
+        en: string[];
+    };
     liveUrl?: string;
     githubUrl?: string;
 }
@@ -15,19 +18,21 @@ const ProjectCard = ({
                          title,
                          description,
                          technologies,
-                         imagesUrls,
+                         images,
                          liveUrl,
                          githubUrl
                      }: ProjectCardProps) => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isAnimating, setIsAnimating] = useState(false);
+
+    const currentLanguageImages = images[i18n.language as keyof typeof images] || images.en;
 
     const handlePrevImage = () => {
         if (isAnimating) return;
         setIsAnimating(true);
         setCurrentImageIndex(prev =>
-            prev === 0 ? imagesUrls.length - 1 : prev - 1
+            prev === 0 ? currentLanguageImages.length - 1 : prev - 1
         );
         setTimeout(() => setIsAnimating(false), 300);
     };
@@ -36,10 +41,14 @@ const ProjectCard = ({
         if (isAnimating) return;
         setIsAnimating(true);
         setCurrentImageIndex(prev =>
-            prev === imagesUrls.length - 1 ? 0 : prev + 1
+            prev === currentLanguageImages.length - 1 ? 0 : prev + 1
         );
         setTimeout(() => setIsAnimating(false), 300);
     };
+
+    useEffect(() => {
+        setCurrentImageIndex(0);
+    }, [i18n.language]);
 
     return (
         <div className="bg-white rounded-lg shadow-lg overflow-hidden">
@@ -50,17 +59,17 @@ const ProjectCard = ({
                         transform: `translateX(-${currentImageIndex * 100}%)`
                     }}
                 >
-                    {imagesUrls.map((url, index) => (
+                    {currentLanguageImages.map((url, index) => (
                         <img
                             key={index}
                             src={url}
-                            alt={`${title} - Image ${index + 1}`}
+                            alt={`${t(title)} - Image ${index + 1}`}
                             className="w-full h-full object-cover flex-shrink-0"
                         />
                     ))}
                 </div>
 
-                {imagesUrls.length > 1 && (
+                {currentLanguageImages.length > 1 && (
                     <>
                         <button
                             onClick={handlePrevImage}
@@ -80,7 +89,7 @@ const ProjectCard = ({
                         </button>
 
                         <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1 z-10">
-                            {imagesUrls.map((_, index) => (
+                            {currentLanguageImages.map((_, index) => (
                                 <div
                                     key={index}
                                     className={`w-2 h-2 rounded-full transition-colors ${
