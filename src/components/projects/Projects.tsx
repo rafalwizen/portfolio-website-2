@@ -1,7 +1,8 @@
 import ProjectCard from './ProjectCard.tsx';
-import { useTranslation } from 'react-i18next';
+import {useTranslation} from 'react-i18next';
+import {projects} from './projectsData';
 
-interface Project {
+export interface Project {
     title: string;
     description: string;
     technologies: string[];
@@ -11,26 +12,7 @@ interface Project {
 }
 
 const Projects = () => {
-    const { t } = useTranslation();
-    const projects: Project[] = [
-        {
-            title: 'Project 1',
-            description: 'Description of project 1',
-            technologies: ['React', 'TypeScript', 'Tailwind'],
-            imageUrl: '/api/placeholder/400/300',
-            liveUrl: 'https://project1.com',
-            githubUrl: 'https://github.com/username/project1'
-        },
-        {
-            title: 'Project 2',
-            description: 'Description of project 2',
-            technologies: ['Next.js', 'Node.js', 'MongoDB'],
-            imageUrl: '/api/placeholder/400/300',
-            liveUrl: 'https://project2.com',
-            githubUrl: 'https://github.com/username/project2'
-        }
-    ];
-
+    const {t} = useTranslation();
     return (
         <section id="portfolio" className="min-h-screen px-4">
             <div className="max-w-7xl mx-auto py-20">

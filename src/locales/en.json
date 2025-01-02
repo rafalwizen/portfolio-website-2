@@ -73,5 +73,16 @@
         "description": "In my projects, I also work with a relatively new field of technology, namely AI tools. My favorites include ClaudeAI, ChatGPT, and V0. These tools help optimize my development process by generating templates, presenting ready-made solutions, and detecting errors. As of today, these technologies are an essential part of my toolkit, allowing me to speed up my work and deliver fully functional solutions."
       }
     }
+  },
+  "projects": {
+    "photographer-website": {
+      "title": "Photographer Website",
+      "description": "My first website that went live on the internet! Currently, due to redevelopment, it is a bit stripped down, but you can still view it at the address below."
+    },
+    "bike-shop": {
+      "title": "Bike Shop",
+      "description": "My first complete store, featuring everything needed for an online business. Admin panels, customer accounts, a product database, and the ability to handle the shopping cart along with payments."
+    }
+
   }
 }

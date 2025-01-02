@@ -73,5 +73,15 @@
         "description": "W swoich projektach korzystam również z całkiem nowej dziedziny technologii, jaką są narzędzia AI. Do moich ulubionych należą ClaudeAI, ChatGPT oraz V0. Narzędzia te pomagają mi w optymalizacji procesu tworzenia, poprzez generowanie szablonów, prezentowanie gotowych rozwiązań oraz wykrywania błędów. Na dzień dzisiejszy technologie te stanowią istotną część mojego zestawu narzędzi, umożliwiając mi przyspieszenie pracy oraz dostarczanie w pełni działających rozwiązań."
       }
     }
+  },
+  "projects": {
+    "photographer-website": {
+      "title" : "Strona dla fotografa",
+      "description": "Moja pierwsza strona która znalazła się w internecie! Aktualnie z powodu przebudowy jest trochę okrojona ale w dalszym ciągu można ją zobaczyć pod poniższym adresem"
+    },
+    "bike-shop": {
+      "title" : "Sklep rowerowy",
+      "description": "Mój pierwszy kompletny sklep posiadający wszystko czego potrzeba internetowemu biznesowi. Panele administratora, konta klientów, baza danych z towarem oraz możliwość obsługi koszyka wraz z płatnościami."
+    }
   }
 }
