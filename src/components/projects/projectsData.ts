@@ -10,7 +10,7 @@ export const projects: Project[] = [
             en: ['src/assets/images/photographer-website-1.jpg', 'src/assets/images/photographer-website-2.jpg']
         },
         liveUrl: 'http://rozbickipawel.pl/',
-        githubUrl: 'https://github.com/username/project1'
+        githubUrl: 'https://github.com/rafalwizen/photographer-website'
     },
     {
         title: 'projects.bike-shop.title',
@@ -26,7 +26,7 @@ export const projects: Project[] = [
                 'src/assets/images/bike-shop-en-2.jpg'
             ]
         },
-        liveUrl: 'https://project2.com',
-        githubUrl: 'https://github.com/username/project2'
+        liveUrl: '',
+        githubUrl: 'https://github.com/rafalwizen/bike-shop'
     }
 ];
