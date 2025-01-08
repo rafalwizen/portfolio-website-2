@@ -15,7 +15,7 @@ export const projects: Project[] = [
     {
         title: 'projects.bike-shop.title',
         description: 'projects.bike-shop.description',
-        technologies: ['Next.js', 'Node.js', 'MongoDB'],
+        technologies: ['React', 'Express.js', 'MySQL'],
         images: {
             pl: [
                 'src/assets/images/bike-shop-pl-1.jpg',

@@ -51,7 +51,7 @@ const ProjectCard = ({
     }, [i18n.language]);
 
     return (
-        <div className="bg-background rounded-lg shadow-lg overflow-hidden">
+        <div className="bg-background rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
             <div className="aspect-video w-full relative overflow-hidden group">
                 <div
                     className="absolute w-full h-full flex transition-transform duration-300 ease-in-out"
@@ -104,42 +104,46 @@ const ProjectCard = ({
                 )}
             </div>
 
-            <div className="p-6">
-                <h3 className="text-xl font-bold text-text-primary mb-2">{t(title)}</h3>
-                <p className="text-text-primary mb-4">{t(description)}</p>
-
-                <div className="flex flex-wrap gap-2 mb-4">
-                    {technologies.map((tech, index) => (
-                        <span
-                            key={index}
-                            className="px-3 py-1 bg-background-light rounded-full text-sm text-text-primary"
-                        >
-                            {tech}
-                        </span>
-                    ))}
+            <div className="p-6 flex flex-col flex-1">
+                <div>
+                    <h3 className="text-xl font-bold text-text-primary mb-2">{t(title)}</h3>
+                    <p className="text-text-primary mb-4">{t(description)}</p>
                 </div>
 
-                <div className="flex gap-4">
-                    {liveUrl && (
-                        <a
-                            href={liveUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition-colors"
-                        >
-                            {t('portfolio.viewProject')}
-                        </a>
-                    )}
-                    {githubUrl && (
-                        <a
-                            href={githubUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="px-4 py-2 border border-black text-text-primary rounded hover:bg-gray-100 transition-colors"
-                        >
-                            {t('portfolio.viewCode')}
-                        </a>
-                    )}
+                <div className="mt-auto">
+                    <div className="flex flex-wrap gap-2 mb-4">
+                        {technologies.map((tech, index) => (
+                            <span
+                                key={index}
+                                className="px-3 py-1 bg-background-light rounded-full text-sm text-text-primary"
+                            >
+                                {tech}
+                            </span>
+                        ))}
+                    </div>
+
+                    <div className="flex gap-4">
+                        {liveUrl && (
+                            <a
+                                href={liveUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition-colors"
+                            >
+                                {t('portfolio.viewProject')}
+                            </a>
+                        )}
+                        {githubUrl && (
+                            <a
+                                href={githubUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-4 py-2 border border-black text-text-primary rounded hover:bg-gray-100 transition-colors"
+                            >
+                                {t('portfolio.viewCode')}
+                            </a>
+                        )}
+                    </div>
                 </div>
             </div>
         </div>
