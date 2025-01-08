@@ -85,5 +85,8 @@
       "description": "My first complete store, featuring everything needed for an online business. Admin panels, customer accounts, a product database, and the ability to handle the shopping cart along with payments."
     }
 
+  },
+  "notifications": {
+    "success": "Email has been copied to the clipboard!"
   }
 }

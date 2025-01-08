@@ -1,9 +1,12 @@
+import { useState } from 'react';
+import Notification from '../Notification';
 import {useTranslation} from 'react-i18next';
 import ContactForm from './ContactForm.tsx';
 import {LinkedInIcon, GitHubIcon, EmailIcon} from './Icons.tsx';
 
 const Contact = () => {
     const {t} = useTranslation();
+    const [showNotification, setShowNotification] = useState(false);
 
     return (
         <section id="contact" className="min-h-screen px-4 bg-background">
@@ -16,11 +19,13 @@ const Contact = () => {
                         <p>{t('contact.info')}</p>
                         <a
                             onClick={() => {
-                                navigator.clipboard.writeText('rafal.wizen@gmail.com').then(() => {
-                                    alert('Email skopiowany do schowka!');
-                                }).catch(() => {
-                                    alert('Wystąpił błąd podczas kopiowania.');
-                                });
+                                navigator.clipboard.writeText('rafal.wizen@gmail.com')
+                                    .then(() => {
+                                        setShowNotification(true);
+                                    })
+                                    .catch(() => {
+                                        setShowNotification(true);
+                                    });
                             }}
                             className="flex items-center gap-3 text-text-primary hover:text-text-primary/70 transition-colors group cursor-pointer"
                         >
@@ -65,6 +70,13 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
+            {showNotification && (
+                <Notification
+                    message={t("notifications.success")}
+                    type="success"
+                    onClose={() => setShowNotification(false)}
+                />
+            )}
         </section>
     );
 };

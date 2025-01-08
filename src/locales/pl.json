@@ -84,5 +84,8 @@
       "title" : "Sklep rowerowy",
       "description": "Mój pierwszy kompletny sklep posiadający wszystko czego potrzeba internetowemu biznesowi. Panele administratora, konta klientów, baza danych z towarem oraz możliwość obsługi koszyka wraz z płatnościami."
     }
+  },
+  "notifications": {
+    "success": "Email został skopiowany do schowka!"
   }
 }
