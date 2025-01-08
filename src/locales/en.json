@@ -28,6 +28,7 @@
   "contact": {
     "title": "Contact",
     "social": "Social Media",
+    "info": "If you want to get in touch with me, feel free to contact me directly via email or through the contact form. You can see the rest of my projects on my GitHub",
     "form": {
       "name": "Full name",
       "email": "Email address",

@@ -1,6 +1,6 @@
 import {useTranslation} from 'react-i18next';
 import ContactForm from './ContactForm.tsx';
-import {LinkedInIcon, GitHubIcon} from './Icons.tsx';
+import {LinkedInIcon, GitHubIcon, EmailIcon} from './Icons.tsx';
 
 const Contact = () => {
     const {t} = useTranslation();
@@ -13,6 +13,23 @@ const Contact = () => {
                 </h2>
                 <div className="grid md:grid-cols-2 gap-12">
                     <div className="space-y-6">
+                        <p>{t('contact.info')}</p>
+                        <a
+                            onClick={() => {
+                                navigator.clipboard.writeText('rafal.wizen@gmail.com').then(() => {
+                                    alert('Email skopiowany do schowka!');
+                                }).catch(() => {
+                                    alert('Wystąpił błąd podczas kopiowania.');
+                                });
+                            }}
+                            className="flex items-center gap-3 text-text-primary hover:text-text-primary/70 transition-colors group cursor-pointer"
+                        >
+                                <span
+                                    className="w-10 h-10 flex items-center justify-center bg-background-light rounded-full group-hover:bg-[rgb(238,238,238)] transition-colors">
+                                    <EmailIcon/>
+                                </span>
+                            rafal.wizen@gmail.com
+                        </a>
                         <h3 className="text-2xl font-semibold text-text-primary">
                             {t('contact.social')}
                         </h3>
@@ -24,7 +41,7 @@ const Contact = () => {
                                 className="flex items-center gap-3 text-text-primary hover:text-text-primary/70 transition-colors group"
                             >
                                 <span
-                                  className="w-10 h-10 flex items-center justify-center bg-background-light rounded-full group-hover:bg-[rgb(238,238,238)] transition-colors">
+                                    className="w-10 h-10 flex items-center justify-center bg-background-light rounded-full group-hover:bg-[rgb(238,238,238)] transition-colors">
                                   <LinkedInIcon/>
                                 </span>
                                 LinkedIn
