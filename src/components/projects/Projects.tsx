@@ -11,7 +11,10 @@ export interface Project {
         en: string[];
     };
     liveUrl: string;
-    githubUrl: string;
+    githubUrl: {
+        pl: string;
+        en: string;
+    };
 }
 
 const Projects = () => {

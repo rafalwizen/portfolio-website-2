@@ -11,7 +11,10 @@ interface ProjectCardProps {
         en: string[];
     };
     liveUrl?: string;
-    githubUrl?: string;
+    githubUrl: {
+        pl: string;
+        en: string;
+    };
 }
 
 const ProjectCard = ({
@@ -27,6 +30,7 @@ const ProjectCard = ({
     const [isAnimating, setIsAnimating] = useState(false);
 
     const currentLanguageImages = images[i18n.language as keyof typeof images] || images.en;
+    const currentLanguageGithubUrl = githubUrl[i18n.language as keyof typeof githubUrl] || githubUrl.en;
 
     const handlePrevImage = () => {
         if (isAnimating) return;
@@ -135,7 +139,7 @@ const ProjectCard = ({
                         )}
                         {githubUrl && (
                             <a
-                                href={githubUrl}
+                                href={currentLanguageGithubUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="px-4 py-2 border border-black text-text-primary rounded hover:bg-gray-100 transition-colors"

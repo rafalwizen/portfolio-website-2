@@ -10,7 +10,10 @@ export const projects: Project[] = [
             en: ['src/assets/images/photographer-website-1.jpg', 'src/assets/images/photographer-website-2.jpg']
         },
         liveUrl: 'http://rozbickipawel.pl/',
-        githubUrl: 'https://github.com/rafalwizen/photographer-website'
+        githubUrl: {
+            pl: 'https://github.com/rafalwizen/photographer-website/blob/master/README.pl.md',
+            en: 'https://github.com/rafalwizen/photographer-website'
+        },
     },
     {
         title: 'projects.bike-shop.title',
@@ -27,6 +30,9 @@ export const projects: Project[] = [
             ]
         },
         liveUrl: '',
-        githubUrl: 'https://github.com/rafalwizen/bike-shop'
+        githubUrl: {
+            pl: 'https://github.com/rafalwizen/bike-shop/blob/master/README.pl.md',
+            en: 'https://github.com/rafalwizen/bike-shop'
+        },
     }
 ];
