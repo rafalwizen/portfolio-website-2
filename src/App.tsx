@@ -7,7 +7,7 @@ import Contact from "./components/contact/Contact.tsx";
 
 const App = () => {
     return (
-        <div className="bg-[rgb(248,248,248)] min-h-screen">
+        <div className="bg-background-light min-h-screen">
             <Navbar />
             <Home/>
             <About/>

@@ -19,7 +19,7 @@ const Projects = () => {
     return (
         <section id="portfolio" className="min-h-screen px-4">
             <div className="max-w-7xl mx-auto py-20">
-                <h2 className="text-3xl md:text-5xl font-bold text-black mb-12">
+                <h2 className="text-3xl md:text-5xl font-bold text-text-primary mb-12">
                     {t('portfolio.title')}
                 </h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

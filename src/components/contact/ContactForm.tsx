@@ -95,7 +95,7 @@ const ContactForm = () => {
     return (
         <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-                <label htmlFor="name" className="block text-sm font-medium text-black mb-1">
+                <label htmlFor="name" className="block text-sm font-medium text-text-primary mb-1">
                     {t('contact.form.name')}
                 </label>
                 <input
@@ -105,7 +105,7 @@ const ContactForm = () => {
                     value={formData.name}
                     onChange={handleChange}
                     className={`w-full px-4 py-2 rounded-lg border ${
-                        errors.name ? 'border-red-500' : 'border-gray-300'
+                        errors.name ? 'border-red-500' : 'border-border'
                     } focus:outline-none focus:ring-2 focus:ring-black`}
                 />
                 {errors.name && (
@@ -114,7 +114,7 @@ const ContactForm = () => {
             </div>
 
             <div>
-                <label htmlFor="email" className="block text-sm font-medium text-black mb-1">
+                <label htmlFor="email" className="block text-sm font-medium text-text-primary mb-1">
                     {t('contact.form.email')}
                 </label>
                 <input
@@ -124,7 +124,7 @@ const ContactForm = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className={`w-full px-4 py-2 rounded-lg border ${
-                        errors.email ? 'border-red-500' : 'border-gray-300'
+                        errors.email ? 'border-red-500' : 'border-border'
                     } focus:outline-none focus:ring-2 focus:ring-black`}
                 />
                 {errors.email && (
@@ -133,7 +133,7 @@ const ContactForm = () => {
             </div>
 
             <div>
-                <label htmlFor="message" className="block text-sm font-medium text-black mb-1">
+                <label htmlFor="message" className="block text-sm font-medium text-text-primary mb-1">
                     {t('contact.form.message')}
                 </label>
                 <textarea
@@ -143,7 +143,7 @@ const ContactForm = () => {
                     onChange={handleChange}
                     rows={5}
                     className={`w-full px-4 py-2 rounded-lg border ${
-                        errors.message ? 'border-red-500' : 'border-gray-300'
+                        errors.message ? 'border-red-500' : 'border-border'
                     } focus:outline-none focus:ring-2 focus:ring-black`}
                 />
                 {errors.message && (
