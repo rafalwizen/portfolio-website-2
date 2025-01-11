@@ -10,10 +10,11 @@ const About = () => {
                 <h2 className="text-3xl md:text-5xl font-bold text-text-primary mb-12">
                     {t('about.title')}
                 </h2>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <AboutCard header={'about.historyHeader'} description={'about.history'}/>
-                    <AboutCard header={'about.skillsHeader'} description={'about.skills'}/>
-                    <AboutCard header={'about.approachHeader'} description={'about.approach'}/>
+                <p>{t('about.info')}</p>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-5">
+                    <AboutCard header={'about.firstHeader'} description={'about.first'}/>
+                    <AboutCard header={'about.secondHeader'} description={'about.second'}/>
+                    <AboutCard header={'about.thirdHeader'} description={'about.third'}/>
                 </div>
             </div>
         </section>

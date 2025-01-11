@@ -13,12 +13,13 @@
   },
   "about": {
     "title": "About Me",
-    "history": "My professional journey is a continuous development towards creating better web solutions.",
-    "historyHeader": "History",
-    "skills": "I specialize in technologies such as React, TypeScript, Node.js, and modern CSS.",
-    "skillsHeader": "Skills",
-    "approach": "In my work, I follow the principle that nothing is impossible - every challenge is an opportunity to grow and find innovative solutions.",
-    "approachHeader": "Approach"
+    "info": "Creating a modern and unique website that will make you stand out online. I will design a cohesive visual identity that highlights the essence of your brand and take care of all the necessary steps to launch your website. My favorite types of projects are:",
+    "firstHeader": "Corporate Websites",
+    "first": "Professional websites designed to build a brand's image online. They include all the essential elements a company needs to effectively showcase its services and establish communication with clients. This is an ideal solution for businesses that value clarity and simplicity.",
+    "secondHeader": "Promotional Websites",
+    "second": "Focused on achieving a specific goal – whether it's promoting a product, service, or building a customer base. These websites are designed with thoughtful layouts and attention-grabbing visuals to encourage user action.",
+    "thirdHeader": "Blogs and Thematic Portals",
+    "third": "Perfect for sharing knowledge, inspirations, or passions. We prioritize clarity, user-friendliness, and visual consistency, enabling the creation of an engaged community around the content."
   },
   "portfolio": {
     "title": "My Projects",

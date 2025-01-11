@@ -12,13 +12,14 @@
     "contact": "Kontakt"
   },
   "about": {
-    "title": "O mnie",
-    "history": "Moja historia zawodowa to ciągły rozwój w kierunku tworzenia coraz lepszych rozwiązań webowych.",
-    "historyHeader": "Historia",
-    "skills": "Specjalizuję się w technologiach takich jak React, TypeScript, Node.js oraz nowoczesnym CSS.",
-    "skillsHeader": "Umiejętności",
-    "approach": "W mojej pracy kieruję się zasadą, że nie ma rzeczy niemożliwych - każde wyzwanie to okazja do rozwoju i znalezienia innowacyjnego rozwiązania.",
-    "approachHeader": "Podejście"
+    "title": "Co oferuję",
+    "info": "Stworzenie dla nowoczesnej i unikalnej strony internetowej, która wyróżni Cię w sieci. Zaprojektuję spójną identyfikację wizualną podkreślającą charakter Twojej marki oraz wykonam wszelkie czynności potrzebne aby strona znalazła się w sieci. Moje szczególnie ulubione rodzaje projektów to:",
+    "firstHeader": "Strony firmowe",
+    "first": "Profesjonalne strony internetowe stworzone z myślą o budowaniu wizerunku marki w sieci. Zawierają wszystkie niezbędne elementy, aby firma mogła skutecznie zaprezentować swoje usługi i nawiązywać kontakt z klientami. To idealne rozwiązanie dla przedsiębiorstw stawiających na przejrzystość i prostotę.",
+    "secondHeader": "Strony promocyjne",
+    "second": "Skoncentrowane na realizacji konkretnego celu – czy to promocji produktu, usługi, czy budowania bazy klientów. Takie strony zachęcają do działania dzięki przemyślanemu układowi i przyciągającemu uwagę designowi.",
+    "thirdHeader": "Blogi i portale tematyczne",
+    "third": "Strony idealne do dzielenia się wiedzą, inspiracjami lub pasjami. Stawiamy na przejrzystość, wygodę użytkowania oraz spójność wizualną, co pozwala na budowanie zaangażowanej społeczności wokół treści."
   },
   "portfolio": {
     "title": "Moje projekty",
