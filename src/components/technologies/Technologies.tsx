@@ -11,7 +11,7 @@ import {useTranslation} from "react-i18next";
 import ClaudeAiIcon from '../../assets/icons/claude-ai-icon.svg';
 import ChatGptIcon from '../../assets/icons/chatgpt-icon.svg';
 import V0 from '../../assets/icons/v0.svg';
-import Separator from "../Separator.tsx";
+import Header from "../Header.tsx";
 
 interface Technology {
     icon: React.ReactNode | React.ReactNode[];
@@ -69,12 +69,7 @@ const Technologies = () => {
     return (
         <section className="min-h-screen px-4 bg-background-light">
             <div className="max-w-7xl mx-auto py-20">
-                <div className="flex flex-col items-center mb-12">
-                    <h2 className="text-3xl md:text-5xl font-bold text-text-primary text-center">
-                        {t('technologies.title')}
-                    </h2>
-                    <Separator />
-                </div>
+                <Header title={'technologies.title'}/>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {technologies.map((tech, index) => (
                         <div

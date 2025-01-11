@@ -3,6 +3,7 @@ import Notification from '../Notification';
 import {useTranslation} from 'react-i18next';
 import ContactForm from './ContactForm.tsx';
 import {LinkedInIcon, GitHubIcon, EmailIcon} from './Icons.tsx';
+import Header from "../Header.tsx";
 
 const Contact = () => {
     const {t} = useTranslation();
@@ -11,9 +12,7 @@ const Contact = () => {
     return (
         <section id="contact" className="min-h-screen px-4 bg-background">
             <div className="max-w-7xl mx-auto py-20">
-                <h2 className="text-3xl md:text-5xl font-bold text-text-primary mb-12">
-                    {t('contact.title')}
-                </h2>
+                <Header title={'contact.title'}/>
                 <div className="grid md:grid-cols-2 gap-12">
                     <div className="space-y-6">
                         <p>{t('contact.info')}</p>
