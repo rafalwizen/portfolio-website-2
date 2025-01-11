@@ -19,7 +19,7 @@ export default {
                     DEFAULT: 'rgb(209,213,219)'
                 },
                 custom: {
-                    orange: '#5a39f6'
+                    primary: '#5a39f6'
                 }
             },
             keyframes: {

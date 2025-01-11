@@ -17,13 +17,13 @@ const Home = () => {
                         <div className="flex gap-4">
                             <button
                                 onClick={() => document.getElementById('portfolio')?.scrollIntoView({behavior: 'smooth'})}
-                                className="px-6 py-3 bg-black text-white rounded-lg hover:bg-black/90 transition-colors"
+                                className="px-6 py-3 bg-custom-primary text-white rounded-lg hover:bg-custom-primary/90 transition-colors"
                             >
                                 {t('home.projects')}
                             </button>
                             <button
                                 onClick={() => document.getElementById('contact')?.scrollIntoView({behavior: 'smooth'})}
-                                className="px-6 py-3 border border-black text-text-primary rounded-lg hover:bg-black/5 transition-colors"
+                                className="px-6 py-3 border border-custom-primary text-custom-primary rounded-lg hover:bg-black/5 transition-colors"
                             >
                                 {t('home.contact')}
                             </button>

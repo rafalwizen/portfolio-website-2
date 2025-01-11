@@ -19,7 +19,7 @@ export interface Project {
 
 const Projects = () => {
     return (
-        <section id="portfolio" className="min-h-screen px-4">
+        <section id="portfolio" className="min-h-screen px-4 bg-background">
             <div className="max-w-7xl mx-auto py-20">
                 <Header title={'portfolio.title'}/>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
