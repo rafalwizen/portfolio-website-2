@@ -1,16 +1,17 @@
-import React, { useState } from 'react';
-import { FaReact, FaJava } from "react-icons/fa";
-import { BiLogoJavascript, BiLogoTypescript } from "react-icons/bi";
-import { SiExpress } from "react-icons/si";
+import React, {useState} from 'react';
+import {FaReact, FaJava} from "react-icons/fa";
+import {BiLogoJavascript, BiLogoTypescript} from "react-icons/bi";
+import {SiExpress} from "react-icons/si";
 import {
     Database,
     ChevronDown,
     ChevronUp
 } from 'lucide-react';
-import { useTranslation } from "react-i18next";
+import {useTranslation} from "react-i18next";
 import ClaudeAiIcon from '../../assets/icons/claude-ai-icon.svg';
 import ChatGptIcon from '../../assets/icons/chatgpt-icon.svg';
 import V0 from '../../assets/icons/v0.svg';
+import Separator from "../Separator.tsx";
 
 interface Technology {
     icon: React.ReactNode | React.ReactNode[];
@@ -19,7 +20,7 @@ interface Technology {
 }
 
 const Technologies = () => {
-    const { t } = useTranslation();
+    const {t} = useTranslation();
     const [expandedCards, setExpandedCards] = useState<number[]>([]);
 
     const toggleCard = (index: number) => {
@@ -32,7 +33,7 @@ const Technologies = () => {
 
     const technologies: Technology[] = [
         {
-            icon: <FaReact size={40} />,
+            icon: <FaReact size={40}/>,
             name: t("technologies.items.react.name"),
             description: t("technologies.items.react.description")
         },
@@ -42,17 +43,17 @@ const Technologies = () => {
             description: t("technologies.items.java.description")
         },
         {
-            icon: <Database size={40} />,
+            icon: <Database size={40}/>,
             name: t("technologies.items.db.name"),
             description: t("technologies.items.db.description")
         },
         {
-            icon: [<BiLogoJavascript size={40} />, <BiLogoTypescript size={40} />],
+            icon: [<BiLogoJavascript size={40}/>, <BiLogoTypescript size={40}/>],
             name: t("technologies.items.js.name"),
             description: t("technologies.items.js.description")
         },
         {
-            icon: <SiExpress size={40} />,
+            icon: <SiExpress size={40}/>,
             name: t("technologies.items.express.name"),
             description: t("technologies.items.express.description")
         },
@@ -68,9 +69,12 @@ const Technologies = () => {
     return (
         <section className="min-h-screen px-4 bg-background-light">
             <div className="max-w-7xl mx-auto py-20">
-                <h2 className="text-3xl md:text-5xl font-bold text-text-primary mb-12 text-center">
-                    {t('technologies.title')}
-                </h2>
+                <div className="flex flex-col items-center mb-12">
+                    <h2 className="text-3xl md:text-5xl font-bold text-text-primary text-center">
+                        {t('technologies.title')}
+                    </h2>
+                    <Separator />
+                </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {technologies.map((tech, index) => (
                         <div

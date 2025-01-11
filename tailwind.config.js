@@ -17,6 +17,9 @@ export default {
                 },
                 border: {
                     DEFAULT: 'rgb(209,213,219)'
+                },
+                custom: {
+                    orange: '#5a39f6'
                 }
             },
             keyframes: {
