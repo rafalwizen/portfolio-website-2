@@ -1,4 +1,5 @@
 import { useTranslation } from 'react-i18next';
+import AboutCard from "./AboutCard.tsx";
 
 const About = () => {
     const { t } = useTranslation();
@@ -10,24 +11,9 @@ const About = () => {
                     {t('about.title')}
                 </h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div className="p-8 bg-background-light rounded-xl">
-                        <h3 className="text-xl font-semibold text-text-primary mb-4">
-                            {t('about.historyHeader')}
-                        </h3>
-                        <p className="text-text-secondary">{t('about.history')}</p>
-                    </div>
-                    <div className="p-8 bg-background-light rounded-xl">
-                        <h3 className="text-xl font-semibold text-text-primary mb-4">
-                            {t('about.skillsHeader')}
-                        </h3>
-                        <p className="text-text-secondary">{t('about.skills')}</p>
-                    </div>
-                    <div className="p-8 bg-background-light rounded-xl">
-                        <h3 className="text-xl font-semibold text-text-primary mb-4">
-                            {t('about.approachHeader')}
-                        </h3>
-                        <p className="text-text-secondary">{t('about.approach')}</p>
-                    </div>
+                    <AboutCard header={'about.historyHeader'} description={'about.history'}/>
+                    <AboutCard header={'about.skillsHeader'} description={'about.skills'}/>
+                    <AboutCard header={'about.approachHeader'} description={'about.approach'}/>
                 </div>
             </div>
         </section>
