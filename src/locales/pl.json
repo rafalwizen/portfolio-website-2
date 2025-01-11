@@ -31,7 +31,7 @@
     "social": "Media społecznościowe",
     "info": "Jeżeli chcesz się ze mną skontaktować zapraszam do kontaktu bezpośrednio przez email lub formularz kontaktowy. Resztę moich projektów można zobaczyć na moim GitHubie",
     "form": {
-      "name": "Imię i nazwisko",
+      "name": "Imię",
       "email": "Adres email",
       "message": "Wiadomość",
       "send": "Wyślij wiadomość",
