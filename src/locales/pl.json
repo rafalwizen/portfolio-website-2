@@ -28,14 +28,14 @@
   "contact": {
     "title": "Kontakt",
     "social": "Media społecznościowe",
-    "info": "Jeżeli chcesz się ze mną skontaktowac zapraszam do kontaktu bezpośrednio przez email lub formularz kontaktowy. Resztę moich projektów mozna zobaczyć na moim GitHubie",
+    "info": "Jeżeli chcesz się ze mną skontaktować zapraszam do kontaktu bezpośrednio przez email lub formularz kontaktowy. Resztę moich projektów można zobaczyć na moim GitHubie",
     "form": {
       "name": "Imię i nazwisko",
       "email": "Adres email",
       "message": "Wiadomość",
       "send": "Wyślij wiadomość",
       "sending": "Wysyłanie...",
-      "success": "Dziękujemy za wiadomość! Odpowiemy najszybciej jak to możliwe.",
+      "success": "Dziękujemy za wiadomość! Odpowiem najszybciej jak to możliwe.",
       "errors": {
         "name": "Imię jest wymagane",
         "email": "Email jest wymagany",
