@@ -84,6 +84,10 @@
     "bike-shop": {
       "title" : "Sklep rowerowy",
       "description": "Mój pierwszy kompletny sklep posiadający wszystko czego potrzeba internetowemu biznesowi. Panele administratora, konta klientów, baza danych z towarem oraz możliwość obsługi koszyka wraz z płatnościami."
+    },
+    "sweet-creations": {
+      "title": "Hanuskowy Torcik",
+      "description": "Strona internetowa prezentująca wypieki mojej żony! Zaprojektowana, aby pokazać jej twórczość i umożliwić łatwy kontakt z nią. Proste portfolio i wizytówka w jednym."
     }
   },
   "notifications": {

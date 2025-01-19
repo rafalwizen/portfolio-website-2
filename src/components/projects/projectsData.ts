@@ -34,5 +34,25 @@ export const projects: Project[] = [
             pl: 'https://github.com/rafalwizen/bike-shop/blob/master/README.pl.md',
             en: 'https://github.com/rafalwizen/bike-shop'
         },
+    },
+    {
+        title: 'projects.sweet-creations.title',
+        description: 'projects.sweet-creations.description',
+        technologies: ['React', 'Tailwind'],
+        images: {
+            pl: [
+                'src/assets/images/sweet-creations-1.jpg',
+                'src/assets/images/sweet-creations-2.jpg'
+            ],
+            en: [
+                'src/assets/images/sweet-creations-1.jpg',
+                'src/assets/images/sweet-creations-2.jpg'
+            ]
+        },
+        liveUrl: 'https://rafalwizen.github.io/sweet-creations/',
+        githubUrl: {
+            pl: 'https://github.com/rafalwizen/sweet-creations/blob/master/README.pl.md',
+            en: 'https://github.com/rafalwizen/sweet-creations'
+        },
     }
 ];

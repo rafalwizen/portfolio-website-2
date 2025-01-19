@@ -84,8 +84,11 @@
     "bike-shop": {
       "title": "Bike Shop",
       "description": "My first complete store, featuring everything needed for an online business. Admin panels, customer accounts, a product database, and the ability to handle the shopping cart along with payments."
+    },
+    "sweet-creations": {
+      "title": "Sweet Creations",
+      "description": "A website showcasing my wife's baked creations! Designed to present her work and provide an easy way to get in touch with her. A simple portfolio and business card in one."
     }
-
   },
   "notifications": {
     "success": "Email has been copied to the clipboard!"
