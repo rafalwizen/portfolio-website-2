@@ -2,6 +2,7 @@ import {EmailIcon, GitHubIcon, LinkedInIcon} from "./Icons.tsx";
 import {useState} from "react";
 import Notification from "../Notification.tsx";
 import {useTranslation} from "react-i18next";
+import { MdOutlineContentCopy } from "react-icons/md";
 
 
 const Socials = () => {
@@ -28,7 +29,7 @@ const Socials = () => {
                                     className="w-10 h-10 flex items-center justify-center bg-background-light rounded-full group-hover:bg-[rgb(238,238,238)] transition-colors">
                                     <EmailIcon/>
                                 </span>
-                    rafal.wizen@gmail.com
+                    rafal.wizen@gmail.com <MdOutlineContentCopy />
                 </a>
                 <h3 className="text-2xl font-semibold text-text-primary">
                     {t('contact.social')}
