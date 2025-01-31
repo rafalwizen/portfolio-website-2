@@ -4,6 +4,21 @@ import { projects } from './projectsData';
 import Header from "../Header.tsx";
 import { LayoutGrid, Maximize2 } from 'lucide-react';
 
+export interface Project {
+    title: string;
+    description: string;
+    technologies: string[];
+    images: {
+        pl: string[];
+        en: string[];
+    };
+    liveUrl: string;
+    githubUrl: {
+        pl: string;
+        en: string;
+    };
+}
+
 const Projects = () => {
     const [isCompact, setIsCompact] = useState(false);
 
