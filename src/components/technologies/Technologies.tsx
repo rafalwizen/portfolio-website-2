@@ -12,6 +12,7 @@ import ClaudeAiIcon from '../../assets/icons/claude-ai-icon.svg';
 import ChatGptIcon from '../../assets/icons/chatgpt-icon.svg';
 import V0 from '../../assets/icons/v0.svg';
 import Header from "../Header.tsx";
+import AnimateOnScroll from '../AnimateOnScroll';
 
 interface Technology {
     icon: React.ReactNode | React.ReactNode[];
@@ -69,13 +70,10 @@ const Technologies = () => {
     return (
         <section className="min-h-screen px-4 bg-background-light">
             <div className="max-w-7xl mx-auto py-20">
-                <Header title={'technologies.title'}/>
+                <Header title={'technologies.title'} />
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {technologies.map((tech, index) => (
-                        <div
-                            key={index}
-                            className="bg-background p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
-                        >
+                        <AnimateOnScroll key={index} className="bg-background p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <div className="flex flex-col items-center text-center">
                                 <div className="mb-4 text-text-primary flex gap-4 items-center">
                                     {Array.isArray(tech.icon) ? (
@@ -92,9 +90,7 @@ const Technologies = () => {
                                     {tech.name}
                                 </h3>
                                 <div className="relative">
-                                    <p className={`text-text-secondary overflow-hidden transition-all duration-300 ${
-                                        expandedCards.includes(index) ? 'max-h-[1000px]' : 'max-h-24'
-                                    }`}>
+                                    <p className={`text-text-secondary overflow-hidden transition-all duration-300 ${expandedCards.includes(index) ? 'max-h-[1000px]' : 'max-h-24'}`}>
                                         {tech.description}
                                     </p>
                                     {tech.description.length > 100 && (
@@ -105,23 +101,24 @@ const Technologies = () => {
                                             {expandedCards.includes(index) ? (
                                                 <>
                                                     {t("technologies.less")}
-                                                    <ChevronUp size={20}/>
+                                                    <ChevronUp size={20} />
                                                 </>
                                             ) : (
                                                 <>
                                                     {t("technologies.more")}
-                                                    <ChevronDown size={20}/>
+                                                    <ChevronDown size={20} />
                                                 </>
                                             )}
                                         </button>
                                     )}
                                 </div>
                             </div>
-                        </div>
+                        </AnimateOnScroll>
                     ))}
                 </div>
             </div>
         </section>
+
     );
 };
 

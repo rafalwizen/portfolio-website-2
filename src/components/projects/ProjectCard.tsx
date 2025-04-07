@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import AnimateOnScroll from '../AnimateOnScroll';
 
 interface ProjectCardProps {
     title: string;
@@ -55,7 +56,7 @@ const ProjectCard = ({
     }, [i18n.language]);
 
     return (
-        <div className="bg-background rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
+        <AnimateOnScroll className="bg-background rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
             <div className="aspect-video w-full relative overflow-hidden group">
                 <div
                     className="absolute w-full h-full flex transition-transform duration-300 ease-in-out"
@@ -150,7 +151,7 @@ const ProjectCard = ({
                     </div>
                 </div>
             </div>
-        </div>
+        </AnimateOnScroll>
     );
 };
 
