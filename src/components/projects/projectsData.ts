@@ -16,40 +16,22 @@ export const projects: Project[] = [
         },
     },
     {
-        title: 'projects.bike-shop.title',
-        description: 'projects.bike-shop.description',
-        technologies: ['React', 'Express.js', 'MySQL'],
-        images: {
-            pl: [
-                'src/assets/images/bike-shop-pl-1.jpg',
-                'src/assets/images/bike-shop-pl-2.jpg'
-            ],
-            en: [
-                'src/assets/images/bike-shop-en-1.jpg',
-                'src/assets/images/bike-shop-en-2.jpg'
-            ]
-        },
-        liveUrl: '',
-        githubUrl: {
-            pl: 'https://github.com/rafalwizen/bike-shop/blob/master/README.pl.md',
-            en: 'https://github.com/rafalwizen/bike-shop'
-        },
-    },
-    {
         title: 'projects.sweet-creations.title',
         description: 'projects.sweet-creations.description',
         technologies: ['React', 'Tailwind'],
         images: {
             pl: [
                 'src/assets/images/sweet-creations-1.jpg',
-                'src/assets/images/sweet-creations-2.jpg'
+                'src/assets/images/sweet-creations-2.jpg',
+                'src/assets/images/sweet-creations-3.jpg'
             ],
             en: [
                 'src/assets/images/sweet-creations-1.jpg',
-                'src/assets/images/sweet-creations-2.jpg'
+                'src/assets/images/sweet-creations-2.jpg',
+                'src/assets/images/sweet-creations-3.jpg'
             ]
         },
-        liveUrl: 'https://rafalwizen.github.io/sweet-creations/',
+        liveUrl: 'https://hanuskowytorcik.vercel.app/',
         githubUrl: {
             pl: 'https://github.com/rafalwizen/sweet-creations/blob/master/README.pl.md',
             en: 'https://github.com/rafalwizen/sweet-creations'
