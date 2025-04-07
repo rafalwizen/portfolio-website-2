@@ -75,7 +75,7 @@ const Technologies = () => {
                     {technologies.map((tech, index) => (
                         <AnimateOnScroll key={index} className="bg-background p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
                             <div className="flex flex-col items-center text-center">
-                                <div className="mb-4 text-text-primary flex gap-4 items-center">
+                                <div className="mb-4 text-custom-primary flex gap-4 items-center">
                                     {Array.isArray(tech.icon) ? (
                                         tech.icon.map((icon, iconIndex) => (
                                             <div key={iconIndex}>
@@ -96,7 +96,7 @@ const Technologies = () => {
                                     {tech.description.length > 100 && (
                                         <button
                                             onClick={() => toggleCard(index)}
-                                            className="mt-2 text-text-primary-600 hover:black flex items-center justify-center w-full gap-1"
+                                            className="mt-2 text-custom-primary hover:black flex items-center justify-center w-full gap-1"
                                         >
                                             {expandedCards.includes(index) ? (
                                                 <>

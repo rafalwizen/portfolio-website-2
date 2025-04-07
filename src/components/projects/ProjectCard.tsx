@@ -133,7 +133,7 @@ const ProjectCard = ({
                                 href={liveUrl}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="px-4 py-2 bg-black text-white rounded hover:bg-gray-800 transition-colors"
+                                className="px-4 py-2 bg-custom-primary text-white rounded hover:bg-gray-800 transition-colors"
                             >
                                 {t('portfolio.viewProject')}
                             </a>
