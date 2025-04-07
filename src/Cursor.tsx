@@ -13,11 +13,32 @@ interface TrailPosition extends Position {
 const Cursor: React.FC = () => {
     const [position, setPosition] = useState<Position>({ x: 0, y: 0 });
     const [trail, setTrail] = useState<TrailPosition[]>([]);
+    const [isDesktop, setIsDesktop] = useState(false);
     const cursorRef = useRef<HTMLDivElement>(null);
     const trailIdRef = useRef(0);
     const lastUpdateTimeRef = useRef(0);
 
     useEffect(() => {
+        const checkIfDesktop = () => {
+            const userAgent = navigator.userAgent.toLowerCase();
+            const isMobile = /android|webos|iphone|ipad|ipod|blackberry|iemobile|opera mini|mobile|tablet/i.test(userAgent);
+
+            const isSmallScreen = window.innerWidth < 1024;
+
+            setIsDesktop(!isMobile && !isSmallScreen);
+        };
+
+        checkIfDesktop();
+        window.addEventListener('resize', checkIfDesktop);
+
+        return () => {
+            window.removeEventListener('resize', checkIfDesktop);
+        };
+    }, []);
+
+    useEffect(() => {
+        if (!isDesktop) return;
+
         let animationFrameId: number;
         let currentPosition = { x: 0, y: 0 };
 
@@ -72,9 +93,13 @@ const Cursor: React.FC = () => {
             document.removeEventListener('mousemove', updatePosition);
             cancelAnimationFrame(animationFrameId);
             document.body.style.cursor = 'auto';
-            document.head.removeChild(styleElement);
+            if (styleElement.parentNode) {
+                document.head.removeChild(styleElement);
+            }
         };
-    }, []);
+    }, [isDesktop]);
+
+    if (!isDesktop) return null;
 
     return (
         <>
@@ -89,7 +114,7 @@ const Cursor: React.FC = () => {
                         width: `${8 - index * 0.5}px`,
                         height: `${8 - index * 0.5}px`,
                         backgroundColor: `rgba(90, 57, 246, ${1 - index * 0.12})`,
-                        transition: 'opacity 30ms ease-out, transform 30ms ease-out', // Dodane płynne zanikanie
+                        transition: 'opacity 200ms ease-out, transform 30ms ease-out',
                         zIndex: 9999,
                     }}
                 />
