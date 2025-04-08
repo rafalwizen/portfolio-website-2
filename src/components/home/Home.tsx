@@ -5,7 +5,6 @@ const Home = () => {
 
     return (
         <section id="home" className="relative min-h-screen pt-20 px-4 overflow-hidden">
-            {/* Tło wideo */}
             <video
                 autoPlay
                 loop
@@ -17,7 +16,6 @@ const Home = () => {
                 Your browser does not support the video tag.
             </video>
 
-            {/* Nakładka przyciemniająca (opcjonalne) */}
             <div className="absolute inset-0 bg-black/40 z-10"></div>
 
             <div className="relative max-w-7xl mx-auto py-20 z-20">
@@ -47,7 +45,7 @@ const Home = () => {
                     <div className="w-full md:w-1/2">
                         <div className="aspect-square max-w-md mx-auto bg-background rounded-full shadow-2xl overflow-hidden">
                             <img
-                                src="/api/placeholder/400/400"
+                                src="/logo.jpg"
                                 alt="Profile"
                                 className="w-full h-full object-cover"
                             />
