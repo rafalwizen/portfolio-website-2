@@ -6,8 +6,8 @@ export const projects: Project[] = [
         description: 'projects.photographer-website.description',
         technologies: ['React', 'Tailwind'],
         images: {
-            pl: ['src/assets/images/photographer-website-1.jpg', 'src/assets/images/photographer-website-2.jpg'],
-            en: ['src/assets/images/photographer-website-1.jpg', 'src/assets/images/photographer-website-2.jpg']
+            pl: ['images/photographer-website-1.jpg', 'images/photographer-website-2.jpg'],
+            en: ['images/photographer-website-1.jpg', 'images/photographer-website-2.jpg']
         },
         liveUrl: 'http://rozbickipawel.pl/',
         githubUrl: {
@@ -21,14 +21,14 @@ export const projects: Project[] = [
         technologies: ['React', 'Tailwind'],
         images: {
             pl: [
-                'src/assets/images/sweet-creations-1.jpg',
-                'src/assets/images/sweet-creations-2.jpg',
-                'src/assets/images/sweet-creations-3.jpg'
+                'images/sweet-creations-1.jpg',
+                'images/sweet-creations-2.jpg',
+                'images/sweet-creations-3.jpg'
             ],
             en: [
-                'src/assets/images/sweet-creations-1.jpg',
-                'src/assets/images/sweet-creations-2.jpg',
-                'src/assets/images/sweet-creations-3.jpg'
+                'images/sweet-creations-1.jpg',
+                'images/sweet-creations-2.jpg',
+                'images/sweet-creations-3.jpg'
             ]
         },
         liveUrl: 'https://hanuskowytorcik.vercel.app/',
