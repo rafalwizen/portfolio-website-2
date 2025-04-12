@@ -1,13 +1,17 @@
-import React, {useState} from 'react';
+import React, {FormEvent, useState} from 'react';
 import {useTranslation} from 'react-i18next';
+import emailjs from '@emailjs/browser';
+import { emailJsConfig } from '../../../config.ts';
 
 interface FormData {
+    domain: string;
     name: string;
     email: string;
     message: string;
 }
 
 interface FormErrors {
+    domain?: string;
     name?: string;
     email?: string;
     message?: string;
@@ -15,14 +19,16 @@ interface FormErrors {
 
 const ContactForm = () => {
     const {t} = useTranslation();
+    const { serviceId, templateId, userId } = emailJsConfig;
     const [formData, setFormData] = useState<FormData>({
+        domain: "Portfolio RW",
         name: '',
         email: '',
         message: ''
     });
     const [errors, setErrors] = useState<FormErrors>({});
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [submitSuccess, setSubmitSuccess] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<'success' | 'error' | null>(null);
 
     const validateForm = (): boolean => {
         const newErrors: FormErrors = {};
@@ -45,37 +51,34 @@ const ContactForm = () => {
         return Object.keys(newErrors).length === 0;
     };
 
-    const handleSubmit = async (e: React.FormEvent) => {
+    const handleSubmit = (e: FormEvent) => {
         e.preventDefault();
-
         if (!validateForm()) {
             return;
         }
-
         setIsSubmitting(true);
+        setSubmitStatus(null);
 
-        try {
-            const response = await fetch('http://localhost:5000/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
+        const form = e.target as HTMLFormElement;
+
+        emailjs.sendForm(serviceId, templateId, form, userId)
+            .then(() => {
+                console.log("Wiadomość wysłana pomyślnie");
+                setSubmitStatus('success');
+                setFormData({
+                    domain: "Portfolio RW",
+                    name: "",
+                    email: "",
+                    message: "",
+                });
+            }, (error) => {
+                console.log("Błąd podczas wysyłania wiadomości");
+                console.log(error);
+                setSubmitStatus('error');
+            })
+            .finally(() => {
+                setIsSubmitting(false);
             });
-
-            const result = await response.json();
-
-            if (response.ok) {
-                setSubmitSuccess(true);
-                setFormData({name: '', email: '', message: ''});
-            } else {
-                throw new Error(result.message || 'Error sending email');
-            }
-        } catch (error) {
-            console.error('Error submitting form:', error);
-        } finally {
-            setIsSubmitting(false);
-        }
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -173,9 +176,15 @@ const ContactForm = () => {
                     )}
                 </button>
 
-                {submitSuccess && (
+                {submitStatus && (
                     <div className="mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
                         {t('contact.form.success')}
+                    </div>
+                )}
+
+                {submitStatus === 'error' && (
+                    <div className="mt-4 p-4 bg-red-100 text-red-700 rounded-md">
+                        {t('contact.form.error')}
                     </div>
                 )}
             </form>

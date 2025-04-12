@@ -36,7 +36,8 @@
       "message": "Wiadomość",
       "send": "Wyślij wiadomość",
       "sending": "Wysyłanie...",
-      "success": "Dziękujemy za wiadomość! Odpowiem najszybciej jak to możliwe.",
+      "success": "Dziękuję za wiadomość! Odpowiem najszybciej jak to możliwe",
+      "error": "Przepraszam, nie udało się wysłać wiadomości. Spróbuj ponownie za chwilę, a jeśli problem się powtórzy, zapraszam do kontaktu mailowego",
       "errors": {
         "name": "Imię jest wymagane",
         "email": "Email jest wymagany",

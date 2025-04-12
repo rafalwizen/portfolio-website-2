@@ -37,6 +37,7 @@
       "send": "Send message",
       "sending": "Sending...",
       "success": "Thank you for your message! I'll respond as soon as possible.",
+      "error": "Sorry, the message couldn’t be sent. Please try again in a moment, and if the problem persists, feel free to contact me via email",
       "errors": {
         "name": "Name is required",
         "email": "Email is required",
