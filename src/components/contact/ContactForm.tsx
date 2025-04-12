@@ -1,7 +1,6 @@
 import React, {FormEvent, useState} from 'react';
 import {useTranslation} from 'react-i18next';
 import emailjs from '@emailjs/browser';
-import { emailJsConfig } from '../../../config.ts';
 
 interface FormData {
     domain: string;
@@ -19,7 +18,6 @@ interface FormErrors {
 
 const ContactForm = () => {
     const {t} = useTranslation();
-    const { serviceId, templateId, userId } = emailJsConfig;
     const [formData, setFormData] = useState<FormData>({
         domain: "Portfolio RW",
         name: '',
@@ -60,8 +58,11 @@ const ContactForm = () => {
         setSubmitStatus(null);
 
         const form = e.target as HTMLFormElement;
+        const serviceID = import.meta.env.VITE_EMAILJS_SERVICE_ID as string;
+        const templateID = import.meta.env.VITE_EMAILJS_TEMPLATE_ID as string;
+        const userID = import.meta.env.VITE_EMAILJS_USER_ID as string;
 
-        emailjs.sendForm(serviceId, templateId, form, userId)
+        emailjs.sendForm(serviceID, templateID, form, userID)
             .then(() => {
                 console.log("Wiadomość wysłana pomyślnie");
                 setSubmitStatus('success');
